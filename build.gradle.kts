@@ -17,6 +17,9 @@ subprojects {
     repositories.mavenCentral()
     plugins.apply("org.jetbrains.kotlin.jvm")
     tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            jvmTarget = "17"
+        }
         compilerOptions {
             jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
         }
