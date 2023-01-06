@@ -1,6 +1,6 @@
 plugins {
-    id("net.minecrell.plugin-yml.bungee") version "0.5.2"
-    id("xyz.jpenilla.run-waterfall") version "2.0.1"
+    alias(libs.plugins.pluginyml.bungee)
+    alias(libs.plugins.r.waterfall)
 }
 
 dependencies {

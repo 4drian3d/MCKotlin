@@ -1,10 +1,10 @@
 plugins {
-    id("net.minecrell.plugin-yml.bukkit") version "0.5.2"
-    id("xyz.jpenilla.run-paper") version "2.0.1"
+    alias(libs.plugins.pluginyml.bukkit)
+    alias(libs.plugins.r.paper)
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
+    compileOnly(libs.paper)
 }
 
 bukkit {

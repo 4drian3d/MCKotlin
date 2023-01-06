@@ -1,7 +1,7 @@
 import org.spongepowered.gradle.plugin.config.PluginLoaders
 
 plugins {
-    id("org.spongepowered.gradle.plugin") version "2.0.2"
+    alias(libs.plugins.sponge.gradle)
 }
 
 repositories {
@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("org.spongepowered:spongeapi:8.1.0")
+    compileOnly(libs.sponge)
 }
 
 sponge {

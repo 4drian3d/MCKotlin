@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm")
-    id("net.kyori.blossom") version "1.3.1"
+    alias(libs.plugins.blossom)
 }
 
 dependencies {
