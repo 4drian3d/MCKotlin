@@ -28,4 +28,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: MCKotlin
-          path: /**/build/libs/MCKotlin*.jar
+          path: |-
+            bungee/build/libs/MCKotlinBungee-*.jar
+            velocity/build/libs/MCKotlinVelocity-*.jar
+            sponge/build/libs/MCKotlinSponge-*.jar
+            paper/build/libs/MCKotlinPaper-*.jar
