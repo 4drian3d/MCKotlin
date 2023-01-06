@@ -1,5 +1,6 @@
 package me.adrianed.mckotlin.paper
 
-class PaperPlugin {
-    
-}
+import org.bukkit.plugin.java.JavaPlugin
+
+@Suppress("unused")
+class PaperPlugin: JavaPlugin()

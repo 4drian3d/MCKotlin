@@ -1,6 +1,6 @@
 rootProject.name = "mckotlin-parent"
 
-val modules = arrayOf("common", "paper", "velocity", "sponge", "krypton", "bungee")
+val modules = arrayOf("common", "paper", "velocity", "sponge", "bungee")
 
 modules.forEach {
     include("mckotlin-$it")

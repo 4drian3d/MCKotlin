@@ -16,6 +16,12 @@ subprojects {
     val projectName = name
     repositories.mavenCentral()
     plugins.apply("org.jetbrains.kotlin.jvm")
+    tasks.withType<KotlinCompile> {
+        compilerOptions {
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+        }
+    }
+
     if (projectName != "mckotlin-common") {
         plugins.apply("com.github.johnrengelman.shadow")
         tasks {
@@ -27,11 +33,6 @@ subprojects {
             }
             named<DefaultTask>("build") {
                 dependsOn("shadowJar")
-            }
-            withType<KotlinCompile> {
-                compilerOptions {
-                    jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
-                }
             }
         }
 

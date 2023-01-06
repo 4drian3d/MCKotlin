@@ -1,20 +1,13 @@
 package me.adrianed.mckotlin.velocity
 
-import com.google.inject.Inject
-import com.velocitypowered.api.event.Subscribe
-import com.velocitypowered.api.event.proxy.ProxyInitializeEvent
 import com.velocitypowered.api.plugin.Plugin
-import com.velocitypowered.api.proxy.ProxyServer
+import me.adrianed.mckotlin.common.version
 
 @Plugin(
-    id = "mckotlin"
+    id = "mckotlin-velocity",
+    name = "MCKotlin-Velocity",
+    version = version,
+    authors = ["4drian3d"]
 )
-class VelocityPlugin @Inject constructor(
-    private val proxyServer: ProxyServer
-) {
-    @Subscribe
-    fun onInitialization(event: ProxyInitializeEvent) {
-
-    }
-}
+class VelocityPlugin
 

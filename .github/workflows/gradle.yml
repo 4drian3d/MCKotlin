@@ -1,0 +1,31 @@
+name: MCKotlin Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: 17
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: Build with Gradle
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 4
+          max_attempts: 2
+          command: gradle build
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: MCKotlin
+          path: /**/build/libs/MCKotlin*.jar
