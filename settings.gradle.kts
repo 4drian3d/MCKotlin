@@ -1,14 +1,14 @@
 rootProject.name = "mckotlin-parent"
 
-val modules = arrayOf("common", "paper", "velocity", "sponge", "bungee")
-
-modules.forEach {
+arrayOf("common", "paper", "velocity", "sponge", "bungee").forEach {
     include("mckotlin-$it")
     project(":mckotlin-$it").projectDir = file(it)
 }
 
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         gradlePluginPortal()
+        mavenCentral()
     }
 }

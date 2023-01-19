@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm")
+    id("mckotlin.base")
     alias(libs.plugins.blossom)
 }
 

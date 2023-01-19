@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.pluginyml.bungee)
     alias(libs.plugins.r.waterfall)
+    id("mckotlin.shadow")
 }
 
 dependencies {

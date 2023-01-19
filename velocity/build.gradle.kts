@@ -1,5 +1,5 @@
 plugins {
-    kotlin("kapt")
+    id("mckotlin.kapt")
     alias(libs.plugins.r.velocity)
 }
 
