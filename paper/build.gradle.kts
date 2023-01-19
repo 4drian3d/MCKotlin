@@ -19,5 +19,12 @@ bukkit {
 }
 
 tasks.runServer {
-    minecraftVersion("1.19.3")
+    // I wanted to use 1.19.3, but... jvmToolChain 8
+    minecraftVersion("1.16.5")
+}
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
 }

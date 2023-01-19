@@ -1,9 +1,6 @@
 # MCKotlin
 
-Get the ability to run and develop Kotlin plugins on your Minecraft server or proxy 
-
-## Requirements
-- Java 17+
+Get the ability to run and develop Kotlin plugins on your Minecraft server or proxy
 
 ## Compatibility
 - Velocity 3+

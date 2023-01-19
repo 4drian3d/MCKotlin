@@ -11,3 +11,9 @@ blossom {
     replaceTokenIn("src/main/kotlin/me/adrianed/mckotlin/common/Constants.kt")
     replaceToken("{version}", project.version)
 }
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
+}

@@ -13,8 +13,10 @@ tasks {
     shadowJar {
         archiveFileName.set("MCKotlin${project.name.firstUppercase()}-${project.version}.jar")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-
         exclude("org/**")
+    }
+    clean {
+        delete("run")
     }
     build {
         dependsOn("shadowJar")

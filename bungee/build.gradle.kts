@@ -1,7 +1,7 @@
 plugins {
+    id("mckotlin.shadow")
     alias(libs.plugins.pluginyml.bungee)
     alias(libs.plugins.r.waterfall)
-    id("mckotlin.shadow")
 }
 
 dependencies {
@@ -19,4 +19,10 @@ bungee {
 
 tasks.runWaterfall {
     waterfallVersion("1.19")
+}
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
 }

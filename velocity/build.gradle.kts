@@ -13,3 +13,9 @@ tasks{
         velocityVersion(libs.versions.velocity.get())
     }
 }
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
