@@ -2,7 +2,7 @@ import org.spongepowered.gradle.plugin.config.PluginLoaders
 
 plugins {
     alias(libs.plugins.sponge.gradle)
-    id("mckotlin.base")
+    id("mckotlin.shadow")
 }
 
 repositories {
