@@ -10,3 +10,6 @@ Get the ability to run and develop Kotlin plugins on your Minecraft server or pr
 
 ## Libraries included
 - Kotlin StdLib
+
+## Downloads
+Dowload it from [Modrinth](https://modrinth.com/plugin/mckotlin)
