@@ -24,5 +24,5 @@ tasks {
 }
 
 dependencies {
-    shadow(project(":mckotlin-common"))
+    implementation(project(":mckotlin-common"))
 }
