@@ -12,6 +12,7 @@ fun String.firstUppercase(): String {
 tasks {
     shadowJar {
         archiveFileName.set("MCKotlin${project.name.firstUppercase()}-${project.version}.jar")
+        archiveClassifier.set("")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         exclude("org/**")
     }

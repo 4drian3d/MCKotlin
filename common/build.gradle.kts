@@ -9,7 +9,7 @@ dependencies {
 }
 
 blossom {
-    replaceTokenIn("src/main/kotlin/me/adrianed/mckotlin/common/Constants.kt")
+    replaceTokenIn("src/main/kotlin/io/github/_4drian3d/mckotlin/common/Constants.kt")
     replaceToken("{version}", project.version)
 }
 
