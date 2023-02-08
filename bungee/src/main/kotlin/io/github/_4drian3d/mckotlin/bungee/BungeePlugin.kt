@@ -1,4 +1,4 @@
-package me.adrianed.mckotlin.bungee
+package io.github._4drian3d.mckotlin.bungee
 
 import net.md_5.bungee.api.plugin.Plugin
 

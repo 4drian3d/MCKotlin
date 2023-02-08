@@ -1,7 +1,7 @@
-package me.adrianed.mckotlin.velocity
+package io.github._4drian3d.mckotlin.velocity
 
 import com.velocitypowered.api.plugin.Plugin
-import me.adrianed.mckotlin.common.version
+import io.github._4drian3d.mckotlin.common.version
 
 @Plugin(
     id = "mckotlin-velocity",
@@ -10,4 +10,3 @@ import me.adrianed.mckotlin.common.version
     authors = ["4drian3d"]
 )
 class VelocityPlugin
-

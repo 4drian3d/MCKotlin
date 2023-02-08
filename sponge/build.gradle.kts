@@ -25,7 +25,7 @@ sponge {
         version(project.version as String)
         license("MIT")
         description(project.description as String)
-        entrypoint("me.adrianed.mckotlin.sponge.SpongePlugin")
+        entrypoint("io.github._4drian3d.mckotlin.sponge.SpongePlugin")
         links {
             homepage("https://github.com/4drian3d/MCKotlin")
             source("https://github.com/4drian3d/MCKotlin")

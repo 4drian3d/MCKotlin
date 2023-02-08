@@ -1,4 +1,4 @@
-package me.adrianed.mckotlin.paper
+package io.github._4drian3d.mckotlin.paper
 
 import org.bukkit.plugin.java.JavaPlugin
 

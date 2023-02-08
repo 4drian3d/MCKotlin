@@ -9,7 +9,7 @@ dependencies {
 }
 
 bungee {
-    main = "me.adrianed.mckotlin.bungee.BungeePlugin"
+    main = "io.github._4drian3d.mckotlin.bungee.BungeePlugin"
     description = project.description as String
     name = "MCKotlin-Bungee"
     version = project.version as String

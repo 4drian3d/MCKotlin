@@ -9,7 +9,7 @@ dependencies {
 }
 
 bukkit {
-    main = "me.adrianed.mckotlin.paper.PaperPlugin"
+    main = "io.github._4drian3d.mckotlin.paper.PaperPlugin"
     description = project.description as String
     name = "MCKotlin-Paper"
     version = project.version as String
