@@ -6,6 +6,8 @@ plugins {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(kotlin("reflect"))
+
+    implementation(libs.kotlinx.coroutines)
 }
 
 blossom {
