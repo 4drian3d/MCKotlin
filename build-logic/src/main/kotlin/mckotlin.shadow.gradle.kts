@@ -15,6 +15,8 @@ tasks {
         archiveClassifier.set("")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         exclude("org/**")
+        exclude("DebugProbesKt.bin")
+        exclude("_COROUTINE/**")
     }
     clean {
         delete("run")
