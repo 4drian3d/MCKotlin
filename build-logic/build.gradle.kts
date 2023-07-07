@@ -5,10 +5,7 @@ plugins {
 dependencies {
     implementation(libs.plugin.shadow)
     implementation(libs.plugin.kotlin)
-}
-
-repositories {
-    gradlePluginPortal()
+    compileOnly(files(libs::class.java.protectionDomain.codeSource.location))
 }
 
 kotlin {

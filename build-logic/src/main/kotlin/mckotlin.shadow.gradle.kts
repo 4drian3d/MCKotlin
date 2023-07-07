@@ -3,15 +3,19 @@ plugins{
     id("mckotlin.base")
 }
 
+val libs = extensions.getByType(org.gradle.accessors.dm.LibrariesForLibs::class)
+
 fun String.firstUppercase(): String {
     val st = this.substring(9)
     val char = st[0]
-    return char.toUpperCase() + st.substring(1)
+    return char.uppercase() + st.substring(1)
 }
+
+val actualPluginVersion = project.version.toString().substringBefore('-')
 
 tasks {
     shadowJar {
-        archiveFileName.set("MCKotlin${project.name.firstUppercase()}-${project.version}.jar")
+        archiveFileName.set("MCKotlin${project.name.firstUppercase()}-${actualPluginVersion}-k${libs.versions.kotlin.get()}.jar")
         archiveClassifier.set("")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         exclude("org/**")
