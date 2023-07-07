@@ -16,6 +16,7 @@ bukkit {
     load = net.minecrell.pluginyml.bukkit.BukkitPluginDescription.PluginLoadOrder.STARTUP
     apiVersion = "1.13"
     author = "4drian3d"
+    foliaSupported = true
 }
 
 tasks.runServer {
