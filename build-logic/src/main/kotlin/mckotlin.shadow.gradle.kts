@@ -21,6 +21,12 @@ tasks {
         exclude("org/**")
         exclude("DebugProbesKt.bin")
         exclude("_COROUTINE/**")
+        doLast {
+            copy {
+                from(archiveFile)
+                into("${rootProject.projectDir}/build")
+            }
+        }
     }
     clean {
         delete("run")

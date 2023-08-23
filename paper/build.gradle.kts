@@ -1,7 +1,7 @@
 plugins {
+    id("mckotlin.shadow")
     alias(libs.plugins.pluginyml.bukkit)
     alias(libs.plugins.r.paper)
-    id("mckotlin.shadow")
 }
 
 dependencies {
