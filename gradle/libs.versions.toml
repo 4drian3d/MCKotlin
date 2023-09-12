@@ -11,7 +11,7 @@ r-task = "2.1.0"
 plugin-yml = "0.6.0"
 blossom = "1.3.1"
 sponge-api = "8.2.0"
-sponge-gradle = "2.1.1"
+sponge-gradle = "2.2.0"
 shadow = "8.1.1"
 
 [libraries]
