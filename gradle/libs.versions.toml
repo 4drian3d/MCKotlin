@@ -3,14 +3,12 @@ metadata.format.version = "1.1"
 [versions]
 
 velocity="3.2.0-SNAPSHOT"
-kotlin="1.9.10"
+kotlin="1.9.20"
 kotlinx-coroutines="1.7.3"
 waterfall="1.19-R0.1-SNAPSHOT"
 paper = "1.16.5-R0.1-SNAPSHOT"
 r-task = "2.2.0"
 plugin-yml = "0.6.0"
-blossom = "1.3.1"
-sponge-api = "8.2.0"
 sponge-gradle = "2.2.0"
 shadow = "8.1.1"
 
@@ -19,7 +17,6 @@ shadow = "8.1.1"
 velocity= { group="com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
 waterfall= { group="io.github.waterfallmc", name = "waterfall-api", version.ref = "waterfall" }
 paper = { group = "com.destroystokyo.paper", name = "paper-api", version.ref = "paper" }
-sponge = { group = "org.spongepowered", name = "spongeapi", version.ref = "sponge-api" }
 
 # kotlinx
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
@@ -38,7 +35,5 @@ r-waterfall = { id = "xyz.jpenilla.run-waterfall", version.ref = "r-task"}
 # plugin-yml
 pluginyml-bukkit = {id = "net.minecrell.plugin-yml.bukkit", version.ref = "plugin-yml"}
 pluginyml-bungee = {id="net.minecrell.plugin-yml.bungee", version.ref = "plugin-yml"}
-
-blossom = { id = "net.kyori.blossom", version.ref = "blossom" }
 
 sponge-gradle = { id = "org.spongepowered.gradle.plugin", version.ref = "sponge-gradle" }

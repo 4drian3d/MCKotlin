@@ -5,21 +5,12 @@ plugins {
     id("mckotlin.shadow")
 }
 
-repositories {
-    maven("https://repo.spongepowered.org/repository/maven-public/")
-}
-
-dependencies {
-    compileOnly(libs.sponge)
-}
-
 sponge {
-    apiVersion("8.0.0")
+    apiVersion("8.1.0")
     loader {
         name(PluginLoaders.JAVA_PLAIN)
         version("1.0")
     }
-
     plugin("mckotlin-sponge") {
         displayName("MCKotlin-Sponge")
         version(project.version as String)

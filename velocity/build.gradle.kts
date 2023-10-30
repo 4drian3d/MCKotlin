@@ -12,6 +12,11 @@ tasks{
     runVelocity {
         velocityVersion(libs.versions.velocity.get())
     }
+    processResources {
+        filesMatching("velocity-plugin.json") {
+            expand("version" to project.version)
+        }
+    }
 }
 
 kotlin {

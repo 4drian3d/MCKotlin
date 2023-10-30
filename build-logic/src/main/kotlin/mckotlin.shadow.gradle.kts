@@ -37,5 +37,8 @@ tasks {
 }
 
 dependencies {
-    implementation(project(":mckotlin-common"))
+    implementation(kotlin("stdlib"))
+    implementation(kotlin("reflect"))
+
+    implementation(libs.kotlinx.coroutines)
 }

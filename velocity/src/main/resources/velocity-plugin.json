@@ -1,0 +1,10 @@
+{
+  "id":"mckotlin-velocity",
+  "name":"MCKotlin-Velocity",
+  "version":"${version}",
+  "description":"Get the ability to run and develop Kotlin plugins on your Minecraft server or proxy",
+  "url":"https://modrinth.com/plugin/mckotlin",
+  "authors":["4drian3d"],
+  "dependencies":[],
+  "main":"io.github._4drian3d.mckotlin.velocity.VelocityPlugin"
+}
