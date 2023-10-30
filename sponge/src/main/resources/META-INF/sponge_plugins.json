@@ -1,0 +1,36 @@
+{
+  "loader": {
+    "name": "java_plain",
+    "version": "1.0"
+  },
+  "license": "MIT",
+  "plugins": [
+    {
+      "id": "mckotlin-sponge",
+      "entrypoint": "io.github._4drian3d.mckotlin.sponge.SpongePlugin",
+      "name": "MCKotlin",
+      "description": "Get the ability to run and develop Kotlin plugins on your Minecraft server",
+      "version": "${version}",
+      "branding": {},
+      "links": {
+        "homepage": "https://github.com/4drian3d/MCKotlin",
+        "source": "https://github.com/4drian3d/MCKotlin",
+        "issues": "https://github.com/4drian3d/MCKotlin/issues"
+      },
+      "contributors": [
+        {
+          "name": "4drian3d",
+          "description": "Lead Developer"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "spongeapi",
+          "version": "8.1.0",
+          "load-order": "after",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

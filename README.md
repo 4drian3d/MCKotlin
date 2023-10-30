@@ -9,12 +9,14 @@ Get the ability to run and develop Kotlin plugins on your Minecraft server or pr
 
 This plugin includes the necessary Kotlin libraries to the server to avoid including them independently in several plugins at the same time
 
+[![](https://www.bisecthosting.com/partners/custom-banners/6fa909d5-ad2b-42c2-a7ec-1c51f8b6384f.webp)](https://www.bisecthosting.com/4drian3d)
+
 ## Requirements
 - Java 8+
 
 ## Compatibility
 - Velocity 3+
-- Sponge 8
+- Sponge 8.1+
 - CraftBukkit/Spigot/Paper/forks 1.8+
 - BungeeCord/Waterfall
 
@@ -33,13 +35,14 @@ Add MCKotlin as a dependency
 depend: MCKotlin-Paper
 ```
 
-#### Paper 1.19.3+
+#### Paper 1.19.4+
 
 **paper-plugin.yml**
 ```yaml
 dependencies:
-  - name: MCKotlin-Paper
-    required: true
+  server:
+    MCKotlin-Paper:
+      required: true
 ```
 
 #### Velocity
@@ -55,6 +58,9 @@ public class VelocityPlugin {}
 ```
 
 ## Libraries included
-- Kotlin StdLib 1.8.20
-- Kotlin Reflect 1.8.20
+- Kotlin StdLib 1.9.20
+- Kotlin Reflect 1.9.20
 - KotlinX Coroutines
+
+### How does this plugin differ from other plugins such as [Kotlin](https://modrinth.com/plugin/kotlin)?
+Unfortunately there are no plugins available that provide the necessary libraries to make kotlin plugins for environments like Velocity or Bungeecord. That was my motivation to develop this plugin that includes Kotlin-stlib 1.9.0 (created by Jetbrains, Apache 2 license)
