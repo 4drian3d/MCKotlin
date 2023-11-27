@@ -58,8 +58,8 @@ public class VelocityPlugin {}
 ```
 
 ## Libraries included
-- Kotlin StdLib 1.9.20
-- Kotlin Reflect 1.9.20
+- Kotlin StdLib 1.9.21
+- Kotlin Reflect 1.9.21
 - KotlinX Coroutines
 
 ### How does this plugin differ from other plugins such as [Kotlin](https://modrinth.com/plugin/kotlin)?
