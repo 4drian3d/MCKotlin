@@ -13,9 +13,8 @@ class PaperMainDispatcherFactory : MainDispatcherFactory {
     override val loadPriority: Int
         get() = Int.MAX_VALUE / 2
 
-    override fun createDispatcher(allFactories: List<MainDispatcherFactory>): MainCoroutineDispatcher {
-        return BukkitSchedulerDispatcher()
-    }
+    override fun createDispatcher(allFactories: List<MainDispatcherFactory>): MainCoroutineDispatcher =
+        BukkitSchedulerDispatcher()
 }
 
 private val plugin by lazy {
@@ -23,6 +22,7 @@ private val plugin by lazy {
 }
 
 class BukkitSchedulerDispatcher : MainCoroutineDispatcher(), Delay {
+
     override val immediate: MainCoroutineDispatcher = this
 
     override fun dispatch(context: CoroutineContext, block: Runnable) {
