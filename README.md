@@ -57,6 +57,26 @@ dependencies:
 public class VelocityPlugin {}
 ```
 
+### Sponge
+
+**build.gradle**
+```groovy
+dependency('mckotlin-sponge') {
+    version '1.4.0'
+    loadOrder PluginDependency.LoadOrder.AFTER
+    optional false
+}
+```
+
+**build.gradle.kts**
+```kts
+dependency("mckotlin-sponge") {
+  version("1.4.0")
+  loadOrder(PluginDependency.LoadOrder.AFTER)
+  optional(false)
+}
+```
+
 ## Libraries included
 - Kotlin StdLib 1.9.21
 - Kotlin Reflect 1.9.21
