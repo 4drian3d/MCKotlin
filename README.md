@@ -57,7 +57,7 @@ dependencies:
 public class VelocityPlugin {}
 ```
 
-### Sponge
+#### Sponge
 
 **build.gradle**
 ```groovy
