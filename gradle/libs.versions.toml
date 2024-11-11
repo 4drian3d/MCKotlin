@@ -29,10 +29,6 @@ plugin-kotlin =  { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version
 # run-task
 r-paper = { id = "xyz.jpenilla.run-paper", version.ref = "r-task"}
 r-velocity = { id = "xyz.jpenilla.run-velocity", version.ref = "r-task"}
-r-waterfall = { id = "xyz.jpenilla.run-waterfall", version.ref = "r-task"}
 
-# plugin-yml
 pluginyml-paper = {id = "net.minecrell.plugin-yml.paper", version.ref = "plugin-yml"}
-pluginyml-bungee = {id="net.minecrell.plugin-yml.bungee", version.ref = "plugin-yml"}
-
 sponge-gradle = { id = "org.spongepowered.gradle.plugin", version.ref = "sponge-gradle" }

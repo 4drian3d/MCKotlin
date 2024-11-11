@@ -1,6 +1,6 @@
 rootProject.name = "mckotlin-parent"
 
-arrayOf("paper", "velocity", "sponge", "bungee").forEach {
+arrayOf("paper", "velocity", "sponge").forEach {
     include("mckotlin-$it")
     project(":mckotlin-$it").projectDir = file(it)
 }
