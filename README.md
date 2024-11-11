@@ -12,13 +12,12 @@ This plugin includes the necessary Kotlin libraries to the server to avoid inclu
 [![](https://www.bisecthosting.com/partners/custom-banners/6fa909d5-ad2b-42c2-a7ec-1c51f8b6384f.webp)](https://www.bisecthosting.com/4drian3d)
 
 ## Requirements
-- Java 8+
+- Java 11+
 
 ## Compatibility
-- Velocity 3+
-- Sponge 8.1+
-- CraftBukkit/Spigot/Paper/forks 1.8+
-- BungeeCord/Waterfall
+- Velocity 3.4+
+- Sponge 8.2+
+- Paper/forks 1.20+
 
 ## How to use
 
@@ -71,15 +70,15 @@ dependency('mckotlin-sponge') {
 **build.gradle.kts**
 ```kts
 dependency("mckotlin-sponge") {
-  version("1.4.0")
+  version("1.5.0")
   loadOrder(PluginDependency.LoadOrder.AFTER)
   optional(false)
 }
 ```
 
 ## Libraries included
-- Kotlin StdLib 1.9.21
-- Kotlin Reflect 1.9.21
+- Kotlin StdLib 2.0.21
+- Kotlin Reflect 2.0.21
 - KotlinX Coroutines
 
 ### How does this plugin differ from other plugins such as [Kotlin](https://modrinth.com/plugin/kotlin)?

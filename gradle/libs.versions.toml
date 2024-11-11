@@ -2,28 +2,26 @@ metadata.format.version = "1.1"
 
 [versions]
 
-velocity="3.2.0-SNAPSHOT"
+velocity="3.4.0-SNAPSHOT"
 kotlin="2.0.21"
 kotlinx-coroutines="1.9.0"
-waterfall="1.19-R0.1-SNAPSHOT"
-paper = "1.16.5-R0.1-SNAPSHOT"
+paper = "1.21.3-R0.1-SNAPSHOT"
 r-task = "2.3.1"
 plugin-yml = "0.6.0"
 sponge-gradle = "2.2.0"
-shadow = "8.1.1"
+shadow = "8.3.5"
 
 [libraries]
 
 velocity= { group="com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
-waterfall= { group="io.github.waterfallmc", name = "waterfall-api", version.ref = "waterfall" }
-paper = { group = "com.destroystokyo.paper", name = "paper-api", version.ref = "paper" }
+paper = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" }
 sponge = { group = "org.spongepowered", name = "spongeapi", version = "8.2.0" }
 
 # kotlinx
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 
 #Gradle dependencies
-plugin-shadow = { group = "com.github.johnrengelman", name = "shadow", version.ref = "shadow" }
+plugin-shadow = { group = "com.gradleup.shadow", name = "shadow-gradle-plugin", version.ref = "shadow" }
 plugin-kotlin =  { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
@@ -34,7 +32,7 @@ r-velocity = { id = "xyz.jpenilla.run-velocity", version.ref = "r-task"}
 r-waterfall = { id = "xyz.jpenilla.run-waterfall", version.ref = "r-task"}
 
 # plugin-yml
-pluginyml-bukkit = {id = "net.minecrell.plugin-yml.bukkit", version.ref = "plugin-yml"}
+pluginyml-paper = {id = "net.minecrell.plugin-yml.paper", version.ref = "plugin-yml"}
 pluginyml-bungee = {id="net.minecrell.plugin-yml.bungee", version.ref = "plugin-yml"}
 
 sponge-gradle = { id = "org.spongepowered.gradle.plugin", version.ref = "sponge-gradle" }
