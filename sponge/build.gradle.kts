@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.sponge.gradle)
+    //alias(libs.plugins.sponge.gradle)
     id("mckotlin.shadow")
 }
 
