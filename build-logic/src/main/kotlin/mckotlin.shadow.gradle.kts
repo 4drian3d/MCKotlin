@@ -41,4 +41,5 @@ dependencies {
     implementation(kotlin("reflect"))
 
     implementation(libs.kotlinx.coroutines)
+    implementation(libs.kotlinx.json)
 }
