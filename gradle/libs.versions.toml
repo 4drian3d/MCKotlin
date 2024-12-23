@@ -10,6 +10,7 @@ r-task = "2.3.1"
 plugin-yml = "0.6.0"
 sponge-gradle = "2.2.0"
 shadow = "8.3.5"
+kotlinx-json = "1.7.3"
 
 [libraries]
 
@@ -19,6 +20,7 @@ sponge = { group = "org.spongepowered", name = "spongeapi", version = "8.2.0" }
 
 # kotlinx
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-json" }
 
 #Gradle dependencies
 plugin-shadow = { group = "com.gradleup.shadow", name = "shadow-gradle-plugin", version.ref = "shadow" }
