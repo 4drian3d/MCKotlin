@@ -2,9 +2,10 @@ metadata.format.version = "1.1"
 
 [versions]
 
-velocity="3.4.0-SNAPSHOT"
-kotlin="2.0.21"
-kotlinx-coroutines="1.9.0"
+velocity = "3.4.0-SNAPSHOT"
+kotlin = "2.1.10"
+kotlinx-coroutines = "1.10.1"
+kotlinx-serialization = "1.8.0"
 paper = "1.21.3-R0.1-SNAPSHOT"
 r-task = "2.3.1"
 plugin-yml = "0.6.0"
@@ -13,22 +14,23 @@ shadow = "8.3.5"
 
 [libraries]
 
-velocity= { group="com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
+velocity = { group = "com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
 paper = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" }
 sponge = { group = "org.spongepowered", name = "spongeapi", version = "8.2.0" }
 
 # kotlinx
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
 
 #Gradle dependencies
 plugin-shadow = { group = "com.gradleup.shadow", name = "shadow-gradle-plugin", version.ref = "shadow" }
-plugin-kotlin =  { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
 
 # run-task
-r-paper = { id = "xyz.jpenilla.run-paper", version.ref = "r-task"}
-r-velocity = { id = "xyz.jpenilla.run-velocity", version.ref = "r-task"}
+r-paper = { id = "xyz.jpenilla.run-paper", version.ref = "r-task" }
+r-velocity = { id = "xyz.jpenilla.run-velocity", version.ref = "r-task" }
 
-pluginyml-paper = {id = "net.minecrell.plugin-yml.paper", version.ref = "plugin-yml"}
+pluginyml-paper = { id = "net.minecrell.plugin-yml.paper", version.ref = "plugin-yml" }
 sponge-gradle = { id = "org.spongepowered.gradle.plugin", version.ref = "sponge-gradle" }

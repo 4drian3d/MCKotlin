@@ -1,4 +1,4 @@
-plugins{
+plugins {
     id("com.gradleup.shadow")
     id("mckotlin.base")
 }
@@ -41,4 +41,5 @@ dependencies {
     implementation(kotlin("reflect"))
 
     implementation(libs.kotlinx.coroutines)
+    implementation(libs.kotlinx.serialization)
 }
