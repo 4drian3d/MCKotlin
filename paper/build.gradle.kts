@@ -14,13 +14,13 @@ paper {
     name = "MCKotlin-Paper"
     version = project.version as String
     load = net.minecrell.pluginyml.bukkit.BukkitPluginDescription.PluginLoadOrder.STARTUP
-    apiVersion = "1.20"
+    apiVersion = "1.21"
     author = "4drian3d"
     foliaSupported = true
 }
 
 tasks.runServer {
-    minecraftVersion("1.21.3")
+    minecraftVersion("1.21.4")
 }
 
 kotlin {
