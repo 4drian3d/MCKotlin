@@ -61,7 +61,7 @@ public class VelocityPlugin {}
 **build.gradle**
 ```groovy
 dependency('mckotlin-sponge') {
-    version '1.4.0'
+    version '1.5.1'
     loadOrder PluginDependency.LoadOrder.AFTER
     optional false
 }
@@ -70,7 +70,7 @@ dependency('mckotlin-sponge') {
 **build.gradle.kts**
 ```kts
 dependency("mckotlin-sponge") {
-  version("1.5.0")
+  version("1.5.1")
   loadOrder(PluginDependency.LoadOrder.AFTER)
   optional(false)
 }
