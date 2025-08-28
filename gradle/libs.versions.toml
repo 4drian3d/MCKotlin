@@ -3,13 +3,13 @@ metadata.format.version = "1.1"
 [versions]
 
 velocity="3.4.0-SNAPSHOT"
-kotlin="2.0.21"
+kotlin="2.2.10"
 kotlinx-coroutines="1.10.2"
-paper = "1.21.3-R0.1-SNAPSHOT"
+paper = "1.21.8-R0.1-SNAPSHOT"
 r-task = "2.3.1"
 plugin-yml = "0.6.0"
 sponge-gradle = "2.2.0"
-shadow = "8.3.5"
+shadow = "9.0.2"
 
 [libraries]
 

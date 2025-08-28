@@ -20,7 +20,7 @@ paper {
 }
 
 tasks.runServer {
-    minecraftVersion("1.21.3")
+    minecraftVersion("1.21.8")
 }
 
 kotlin {
