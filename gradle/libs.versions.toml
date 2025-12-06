@@ -9,7 +9,7 @@ paper = "1.21.8-R0.1-SNAPSHOT"
 r-task = "3.0.2"
 plugin-yml = "0.6.0"
 sponge-gradle = "2.3.0"
-shadow = "9.2.2"
+shadow = "9.3.0"
 
 [libraries]
 
