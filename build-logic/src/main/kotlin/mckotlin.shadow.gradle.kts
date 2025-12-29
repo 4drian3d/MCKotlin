@@ -24,7 +24,7 @@ tasks {
         doLast {
             copy {
                 from(archiveFile)
-                into("${rootProject.projectDir}/build")
+                into("${rootProject.projectDir}/jar")
             }
         }
     }
