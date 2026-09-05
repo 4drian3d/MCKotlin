@@ -27,14 +27,7 @@ Simply install the latest version of the plugin on your server or proxy
 ### Developers
 Add MCKotlin as a dependency
 
-#### Spigot
-
-**plugin.yml**
-```yaml
-depend: MCKotlin-Paper
-```
-
-#### Paper 1.19.4+
+#### Paper
 
 **paper-plugin.yml**
 ```yaml
